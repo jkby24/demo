@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <script src="/lib/jquery/jquery-1.12.0.js"></script>
+    <script src="/lib/angular/angular.js"></script>
+</head>
+<body>
+<div ng-controller="MyController">
+    <h1>Hello {{ clock }}!</h1>
+
+    <div ng-controller="MyController2">
+        <input ng-model="to"
+               type="email"
+               placeholder="Recipient" />
+        <textarea ng-model="emailBody"></textarea>
+        <pre>{{previewText}}</pre>
+    </div>
+
+</div>
+<script type="text/javascript">
+    function MyController($scope, $timeout) {
+        var updateClock = function() {
+            $scope.clock = new Date();
+            $timeout(function() {
+                updateClock();
+            }, 1000);
+        };
+        updateClock();
+    };
+    angular.module('myApp', [])
+            .controller('MyController2', function($scope, $interpolate) {
+                // 设置监听
+                $scope.$watch('emailBody', function(body) {
+                    if (body) {
+
+                        var template = $interpolate(body);
+                        $scope.previewText =
+                                template({to: $scope.to});
+                    }
+                });
+            });
+
+</script>
+</body>
