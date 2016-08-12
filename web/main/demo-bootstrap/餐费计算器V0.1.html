@@ -2,81 +2,97 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>餐费计算器V0.1</title>
+    <title>餐费计算器V0.2</title>
     <link href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
     <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
     <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
     <!-- 包括所有已编译的插件 -->
     <script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script>
-
-        function 计算每种加个的餐费(优惠总价, 优惠前总价, 总的包装费和送餐费, 总共多少份套餐, 每种套餐的售价数组) {
-            var 每种加个的餐费 = [];
-            每种套餐的售价数组.forEach(function (item) {
-				var 最终价格 = (优惠总价 / 优惠前总价) * ( +item + 总的包装费和送餐费 / 总共多少份套餐);
-                每种加个的餐费.push('<tr><td>'+item+'</td><td>'+最终价格+'</td></tr>');
+        function 计算每种价格的餐费(优惠价, 原价, 总包装费和送餐费, 套餐份数, 每种套餐的售价) {
+            var 每种价格的餐费 = [];
+            每种套餐的售价.forEach(function (item) {
+                var 最终价格 = (优惠价 / 原价) * ( +item + 总包装费和送餐费 / 套餐份数);
+                每种价格的餐费.push('<tr><td>' + item + '</td><td>' + 最终价格 + '</td></tr>');
             }, this);
-			$('tbody').html(每种加个的餐费.join(''));
-            console.log(每种加个的餐费);
-        };
-        $(document).ready(function(){
-            $('#计算吧').click(function(){
-                计算每种加个的餐费($('#优惠总价').val(),$('#优惠前总价').val(),$('#总的包装费和送餐费').val(),$('#总共多少份套餐').val(),($('#每种套餐的售价数组').val()).split('#'));
+            $('tbody').html(每种价格的餐费.join(''));
+            console.log(每种价格的餐费);
+        }
+
+        $(document).ready(function () {
+            $('#计算吧').click(function () {
+                计算每种价格的餐费(eval($('#优惠价').val()), eval($('#原价').val()), eval($('#总包装费和送餐费').val()), $('#套餐份数').val(), ($('#每种套餐的售价').val()).split('*'));
             })
         })
     </script>
 </head>
 <body>
+    <div class="jumbotron">
+        <h1>餐费计算器V0.2</h1>
+    </div>
+    <div class="panel panel-primary">
+        <div class="panel-heading">套餐信息</div>
+        <div class="panel-body">
+            <p>填写说明：</p>
+            <p>1、优惠价、原价、总包装费和送餐费 三行可支持输入简单数学公式：例如：48+47；</p>
+            <p>2、每种套餐的售价用*分割例如：20*22；</p>
+        </div>
+        <div class="panel-body">
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label for="优惠价" class="col-sm-2 control-label">优惠价</label>
 
-	<h1 class="text-center">餐费计算器V0.1</h1>
-	<div>
-		<form class="form-horizontal" role="form">
-			<div class="form-group">
-				<label for="优惠总价" class="col-sm-2 control-label">优惠总价</label>
-				<div class="col-sm-10">
-					<input type="text" class="form-control" id="优惠总价">
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="优惠前总价" class="col-sm-2 control-label">优惠前总价</label>
-				<div class="col-sm-10">
-					<input type="text" class="form-control" id="优惠前总价">
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="总的包装费和送餐费" class="col-sm-2 control-label">总的包装费和送餐费</label>
-				<div class="col-sm-10">
-					<input type="text" class="form-control" id="总的包装费和送餐费">
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="总共多少份套餐" class="col-sm-2 control-label">总共多少份套餐</label>
-				<div class="col-sm-10">
-					<input type="text" class="form-control" id="总共多少份套餐">
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="每种套餐的售价数组" class="col-sm-2 control-label">每种套餐的售价数组(用#分割)</label>
-				<div class="col-sm-10">
-					<input type="text" class="form-control" id="每种套餐的售价数组">
-				</div>
-			</div>
-		</form>
-		<div class="col-sm-offset-2 col-sm-10">
-			<button class="btn btn-default" id="计算吧">计算吧</button>
-		</div>
-	</div>
-	<div>
-		<table class="table table-striped table-bordered table-hover">
-              <thead>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="优惠价">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="原价" class="col-sm-2 control-label">原价</label>
+
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="原价">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="总包装费和送餐费" class="col-sm-2 control-label">总包装费和送餐费</label>
+
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="总包装费和送餐费">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="套餐份数" class="col-sm-2 control-label">套餐份数</label>
+
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="套餐份数">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="每种套餐的售价" class="col-sm-2 control-label">每种套餐的售价</label>
+
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="每种套餐的售价">
+                    </div>
+                </div>
+            </form>
+            <div class="col-sm-offset-2 col-sm-10">
+                <button class="btn btn-default" id="计算吧">计算吧</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">最终价格</div>
+        <table class="table table-striped table-bordered table-hover">
+            <thead>
                 <tr>
-                  <th>套餐原始价格</th>
-                  <th>最终价格</th>
+                    <th>套餐原始价格</th>
+                    <th>最终价格</th>
                 </tr>
-              </thead>
-              <tbody>
-              </tbody>
-            </table>
-	</div>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>

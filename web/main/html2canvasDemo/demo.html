@@ -1,0 +1,1004 @@
+﻿<!doctype html>
+<html>
+<head>
+    <!--<script type="text/javascript" src="es6-promise.js"></script>-->
+    <script type="text/javascript" src="html2canvas.js"></script>
+
+    <!--<script type="text/javascript" src="html2canvas.svg.js"></script>-->
+    <script type="text/javascript" src="jquery.js"></script>
+
+</head>
+<body>
+
+<div id="testtesttest">133333dfgdfgdfg</div>
+<a href="javascript:;" esp-download-report="" file-name="2016-化学-初三-上学期-学期总测-纯主观陈强专用" selector=".editor_div">下载报告</a>
+<!--<div>-->
+<!--<a class='add' id="button">生成2</a>-->
+<!--</div>-->
+<!--<div class="report-download-item" id="report-download-item">-->
+<!--232132134fgfdgdfsg-->
+<!--</div>-->
+<!--<div><canvas></canvas></div>-->
+<!--<div id="testc"></div>-->
+<!--<script type="text/javascript">-->
+<!--var canvas = document.querySelector("canvas");-->
+<!--document.querySelector("#button").addEventListener("click", function() {-->
+
+<!--html2canvas(document.querySelector("#testtesttest"),  {-->
+<!--canvas: canvas,-->
+<!--allowTaint: true,-->
+<!--aintTest: false,-->
+<!--onrendered: function(canvas)  {-->
+<!--var canvastemp = document.querySelector("canvas");-->
+<!--var img = canvastemp.toDataURL();-->
+<!--var newImg = document.createElement("img");-->
+<!--newImg.src =  img;-->
+<!--newImg.height = 100;-->
+<!--//		        document.getElementById(page_params.current_id).appendChild(newImg);-->
+<!--document.getElementById('testc').appendChild(newImg);-->
+<!--}-->
+<!--});-->
+<!--/*html2canvas(document.querySelector("#editor"), {canvas: canvas}).then(function(canvas) {-->
+<!--console.log('Drew on the existing canvas');-->
+<!--});*/-->
+<!--}, false);-->
+<!--</script>-->
+<script type="text/javascript" src="lib/canvas/html2canvas.js"></script>
+
+<style type="text/css">
+    .editor_div {
+        width: 500px;
+        float: left;
+        border: 2px dashed #C6E2FF;
+        margin: 10px
+    }
+
+    .thumbnail_div {
+        float: left;
+        width: 200px;
+        border: 2px dashed #C6E2FF;
+        margin: 10px;
+        min-height: 500px;
+        height: auto;
+    }
+
+    .add {
+        background: #09bfe7 none repeat scroll 0 0;
+        border: 1px solid #0ab2d7;
+        border-radius: 3px;
+        color: #ffffff;
+        display: inline-block;
+        font-size: 14px;
+        height: 30px;
+        line-height: 30px;
+        margin: 0 22px 0 60px;
+        padding: 0 20px;
+    }
+
+    a:hover {
+        cursor: pointer;
+    }
+
+    li {
+        border: 2px dashed #C6E2FF;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .selected {
+        border: 2px solid #FF6699;
+    }
+
+    li:hover {
+        cursor: pointer;
+    }
+    table{
+        border-collapse: collapse;
+    }
+    table td{
+        word-break: break-all;
+        border:1px solid #FF6699;
+    }
+
+    .table tr, .table2 tr {
+        /*background: #fff*/
+    }
+</style>
+<body>
+
+
+<div class='thumbnail_div'>
+    <a class='add' id='add'>+ 新建22223</a>
+    <ol>
+
+    </ol>
+</div>
+
+<div id="editor" class="editor_div">
+    <div style="width: 100px;word-break: break-all">
+        1222222222222222222222222222222222
+    </div>
+    <table class="table2">
+        <thead>
+        <tr>
+            <th width="10%"   class="ng-scope">主题</th>
+            <th width="10%"  class="ng-scope">核心概念</th>
+            <!-- ngIf: stateParams.test_type == 'UNITTEST' -->
+            <th class="ng-scope">指标</th>
+            <th width="10%" t class="ng-scope">得分率</th>
+            <th width="10%"  class="ng-scope">学校平均得分率</th><th width="10%"   class="ng-scope">区县平均得分率</th><th width="10%" class="ng-scope">错误试题</th>
+
+            <th width="10%"  class="ng-scope">推荐微测</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="hover-none ng-scope" >
+
+            <td  rowspan="12" class="ng-binding ng-scope">组成与构成</td>
+
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan --><td  rowspan="9" class="ng-binding ng-scope">元素</td><!-- end ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+
+            <!-- ngIf: $index==0 && item.nameA && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA || 0) && item.nameB && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA+item.lengthB || 0) && item.nameC && stateParams.test_type == 'UNITTEST' -->
+            <!--指标-->
+            <td class="ng-binding">
+                <div style="width: 100px;word-break: break-all">
+                   1222222222222222222222222222222222
+                </div>
+
+            </td>
+            <!--得分率-->
+            <td class="ng-binding">100%</td>
+            <!--达标得分率-->
+            <!--<td ng-bind="(item.uts_rate*100 | numberToFixedFilter:0)+'%'"></td>
+            &lt;!&ndash;状态&ndash;&gt;
+            <td ng-bind="(item.rate>=item.uts_rate)?('report.panel.basedata.reach_standard' | translate):('report.panel.basedata.not_reach_standard' | translate)"></td>-->
+            <!--学校平均得分率-->
+            <td class="ng-binding ng-scope">100%</td>
+            <!--区县平均得分率-->
+            <td class="ng-binding ng-scope">100%</td>
+            <!--错误试题-->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length == 0 --><td class="ng-scope">无</td><!-- end ngIf: item.error_questions && item.error_questions.length == 0 -->
+            <!--推荐资源-->
+            <!-- ngIf: stateParams.test_type == 'UNITTEST' -->
+            <!--推荐微测-->
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan --><td  rowspan="9" class="ng-scope">
+            <!-- ngIf: item.recommendUnit --><a class="title-link-custom ng-scope">查看</a><!-- end ngIf: item.recommendUnit -->
+            <!-- ngIf: !item.recommendUnit -->
+        </td><!-- end ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+        </tr><!-- end ngRepeat: item in model.baseData.groupQuotaData --><tr class="hover-none ng-scope" >
+
+
+
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+
+            <!-- ngIf: $index==0 && item.nameA && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA || 0) && item.nameB && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA+item.lengthB || 0) && item.nameC && stateParams.test_type == 'UNITTEST' -->
+            <!--指标-->
+            <td class="ng-binding">建立原子中质子数、核电荷数与核外电子数的对应关系</td>
+            <!--得分率-->
+            <td class="ng-binding">100%</td>
+            <!--达标得分率-->
+            <!--<td ng-bind="(item.uts_rate*100 | numberToFixedFilter:0)+'%'"></td>
+            &lt;!&ndash;状态&ndash;&gt;
+            <td ng-bind="(item.rate>=item.uts_rate)?('report.panel.basedata.reach_standard' | translate):('report.panel.basedata.not_reach_standard' | translate)"></td>-->
+            <!--学校平均得分率-->
+            <td class="ng-binding ng-scope">100%</td>
+            <!--区县平均得分率-->
+            <td  class="ng-binding ng-scope">100%</td>
+            <!--错误试题-->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length == 0 --><td class="ng-scope">无</td><!-- end ngIf: item.error_questions && item.error_questions.length == 0 -->
+            <!--推荐资源-->
+            <!-- ngIf: stateParams.test_type == 'UNITTEST' -->
+            <!--推荐微测-->
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+        </tr><!-- end ngRepeat: item in model.baseData.groupQuotaData --><tr class="hover-none ng-scope" >
+
+
+
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+
+            <!-- ngIf: $index==0 && item.nameA && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA || 0) && item.nameB && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA+item.lengthB || 0) && item.nameC && stateParams.test_type == 'UNITTEST' -->
+            <!--指标-->
+            <td class="ng-binding">建立原子与分子、离子的关系</td>
+            <!--得分率-->
+            <td class="ng-binding">100%</td>
+            <!--达标得分率-->
+            <!--<td ng-bind="(item.uts_rate*100 | numberToFixedFilter:0)+'%'"></td>
+            &lt;!&ndash;状态&ndash;&gt;
+            <td ng-bind="(item.rate>=item.uts_rate)?('report.panel.basedata.reach_standard' | translate):('report.panel.basedata.not_reach_standard' | translate)"></td>-->
+            <!--学校平均得分率-->
+            <td class="ng-binding ng-scope">100%</td>
+            <!--区县平均得分率-->
+            <td  class="ng-binding ng-scope">100%</td>
+            <!--错误试题-->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length == 0 --><td  class="ng-scope">无</td><!-- end ngIf: item.error_questions && item.error_questions.length == 0 -->
+            <!--推荐资源-->
+            <!-- ngIf: stateParams.test_type == 'UNITTEST' -->
+            <!--推荐微测-->
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+        </tr><!-- end ngRepeat: item in model.baseData.groupQuotaData --><tr class="hover-none ng-scope" >
+
+
+
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+
+            <!-- ngIf: $index==0 && item.nameA && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA || 0) && item.nameB && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA+item.lengthB || 0) && item.nameC && stateParams.test_type == 'UNITTEST' -->
+            <!--指标-->
+            <td class="ng-binding">知道原子是由原子核和核外电子构成，原子核一般是由质子和中子构成</td>
+            <!--得分率-->
+            <td class="ng-binding">0%</td>
+            <!--达标得分率-->
+            <!--<td ng-bind="(item.uts_rate*100 | numberToFixedFilter:0)+'%'"></td>
+            &lt;!&ndash;状态&ndash;&gt;
+            <td ng-bind="(item.rate>=item.uts_rate)?('report.panel.basedata.reach_standard' | translate):('report.panel.basedata.not_reach_standard' | translate)"></td>-->
+            <!--学校平均得分率-->
+            <td class="ng-binding ng-scope">0%</td>
+            <!--区县平均得分率-->
+            <td  class="ng-binding ng-scope">0%</td>
+            <!--错误试题-->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient --><td class="ng-scope">
+            <a esp-common-preview="/html/exam/answer.jsp?is_marked_preview=true&amp;view_type=specificQuestion&amp;exam_id=bd2ad1c9-841f-44b5-b6b7-fb1a5c32002b&amp;session_id=87c14f7b-a062-4bc2-a8f5-eff517f470a3&amp;exam_name=2016-%E5%8C%96%E5%AD%A6-%E5%88%9D%E4%B8%89-%E4%B8%8A%E5%AD%A6%E6%9C%9F-%E5%AD%A6%E6%9C%9F%E6%80%BB%E6%B5%8B-%E6%A8%A1%E6%9D%BF&amp;user_name=学生01&amp;user_id=2079939622&amp;qid=2e2d35c2-57e3-42d8-8b3a-7e64a3d28a41" class="link">
+                <!-- ngRepeat: question in item.error_questions --><esp-text class="ng-scope">
+                <esp-text class="ng-binding">3</esp-text><esp-text class="ng-binding"></esp-text>
+            </esp-text><!-- end ngRepeat: question in item.error_questions -->
+            </a>
+        </td><!-- end ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length == 0 -->
+            <!--推荐资源-->
+            <!-- ngIf: stateParams.test_type == 'UNITTEST' -->
+            <!--推荐微测-->
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+        </tr><!-- end ngRepeat: item in model.baseData.groupQuotaData --><tr class="hover-none ng-scope" >
+
+
+
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+
+            <!-- ngIf: $index==0 && item.nameA && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA || 0) && item.nameB && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA+item.lengthB || 0) && item.nameC && stateParams.test_type == 'UNITTEST' -->
+            <!--指标-->
+            <td class="ng-binding">辨识常见的分子和原子、离子符号</td>
+            <!--得分率-->
+            <td class="ng-binding">0%</td>
+            <!--达标得分率-->
+            <!--<td ng-bind="(item.uts_rate*100 | numberToFixedFilter:0)+'%'"></td>
+            &lt;!&ndash;状态&ndash;&gt;
+            <td ng-bind="(item.rate>=item.uts_rate)?('report.panel.basedata.reach_standard' | translate):('report.panel.basedata.not_reach_standard' | translate)"></td>-->
+            <!--学校平均得分率-->
+            <td class="ng-binding ng-scope">0%</td>
+            <!--区县平均得分率-->
+            <td  class="ng-binding ng-scope">0%</td>
+            <!--错误试题-->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient --><td class="ng-scope">
+            <a esp-common-preview="/html/exam/answer.jsp?is_marked_preview=true&amp;view_type=specificQuestion&amp;exam_id=bd2ad1c9-841f-44b5-b6b7-fb1a5c32002b&amp;session_id=87c14f7b-a062-4bc2-a8f5-eff517f470a3&amp;exam_name=2016-%E5%8C%96%E5%AD%A6-%E5%88%9D%E4%B8%89-%E4%B8%8A%E5%AD%A6%E6%9C%9F-%E5%AD%A6%E6%9C%9F%E6%80%BB%E6%B5%8B-%E6%A8%A1%E6%9D%BF&amp;user_name=学生01&amp;user_id=2079939622&amp;qid=2e2d35c2-57e3-42d8-8b3a-7e64a3d28a41" class="link">
+                <!-- ngRepeat: question in item.error_questions --><esp-text class="ng-scope">
+                <esp-text class="ng-binding">3</esp-text><esp-text class="ng-binding"></esp-text>
+            </esp-text><!-- end ngRepeat: question in item.error_questions -->
+            </a>
+        </td><!-- end ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length == 0 -->
+            <!--推荐资源-->
+            <!-- ngIf: stateParams.test_type == 'UNITTEST' -->
+            <!--推荐微测-->
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+        </tr><!-- end ngRepeat: item in model.baseData.groupQuotaData --><tr class="hover-none ng-scope" >
+
+
+
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+
+            <!-- ngIf: $index==0 && item.nameA && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA || 0) && item.nameB && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA+item.lengthB || 0) && item.nameC && stateParams.test_type == 'UNITTEST' -->
+            <!--指标-->
+            <td class="ng-binding">辨识常见分子的微观图示</td>
+            <!--得分率-->
+            <td class="ng-binding">100%</td>
+            <!--达标得分率-->
+            <!--<td ng-bind="(item.uts_rate*100 | numberToFixedFilter:0)+'%'"></td>
+            &lt;!&ndash;状态&ndash;&gt;
+            <td ng-bind="(item.rate>=item.uts_rate)?('report.panel.basedata.reach_standard' | translate):('report.panel.basedata.not_reach_standard' | translate)"></td>-->
+            <!--学校平均得分率-->
+            <td class="ng-binding ng-scope">100%</td>
+            <!--区县平均得分率-->
+            <td  class="ng-binding ng-scope">100%</td>
+            <!--错误试题-->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length == 0 --><td  class="ng-scope">无</td><!-- end ngIf: item.error_questions && item.error_questions.length == 0 -->
+            <!--推荐资源-->
+            <!-- ngIf: stateParams.test_type == 'UNITTEST' -->
+            <!--推荐微测-->
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+        </tr><!-- end ngRepeat: item in model.baseData.groupQuotaData --><tr class="hover-none ng-scope" >
+
+
+
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+
+            <!-- ngIf: $index==0 && item.nameA && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA || 0) && item.nameB && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA+item.lengthB || 0) && item.nameC && stateParams.test_type == 'UNITTEST' -->
+            <!--指标-->
+            <td class="ng-binding">能建立熟悉的宏观现象（三态变化、扩散等）与微粒性质的关联</td>
+            <!--得分率-->
+            <td class="ng-binding">100%</td>
+            <!--达标得分率-->
+            <!--<td ng-bind="(item.uts_rate*100 | numberToFixedFilter:0)+'%'"></td>
+            &lt;!&ndash;状态&ndash;&gt;
+            <td ng-bind="(item.rate>=item.uts_rate)?('report.panel.basedata.reach_standard' | translate):('report.panel.basedata.not_reach_standard' | translate)"></td>-->
+            <!--学校平均得分率-->
+            <td class="ng-binding ng-scope">100%</td>
+            <!--区县平均得分率-->
+            <td  class="ng-binding ng-scope">100%</td>
+            <!--错误试题-->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length == 0 --><td  class="ng-scope">无</td><!-- end ngIf: item.error_questions && item.error_questions.length == 0 -->
+            <!--推荐资源-->
+            <!-- ngIf: stateParams.test_type == 'UNITTEST' -->
+            <!--推荐微测-->
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+        </tr><!-- end ngRepeat: item in model.baseData.groupQuotaData --><tr class="hover-none ng-scope" >
+
+
+
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+
+            <!-- ngIf: $index==0 && item.nameA && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA || 0) && item.nameB && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA+item.lengthB || 0) && item.nameC && stateParams.test_type == 'UNITTEST' -->
+            <!--指标-->
+            <td class="ng-binding">建立最外层电子数与原子性质之间的关联</td>
+            <!--得分率-->
+            <td class="ng-binding">67%</td>
+            <!--达标得分率-->
+            <!--<td ng-bind="(item.uts_rate*100 | numberToFixedFilter:0)+'%'"></td>
+            &lt;!&ndash;状态&ndash;&gt;
+            <td ng-bind="(item.rate>=item.uts_rate)?('report.panel.basedata.reach_standard' | translate):('report.panel.basedata.not_reach_standard' | translate)"></td>-->
+            <!--学校平均得分率-->
+            <td class="ng-binding ng-scope">67%</td>
+            <!--区县平均得分率-->
+            <td  class="ng-binding ng-scope">67%</td>
+            <!--错误试题-->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient --><td class="ng-scope">
+            <a esp-common-preview="/html/exam/answer.jsp?is_marked_preview=true&amp;view_type=specificQuestion&amp;exam_id=bd2ad1c9-841f-44b5-b6b7-fb1a5c32002b&amp;session_id=87c14f7b-a062-4bc2-a8f5-eff517f470a3&amp;exam_name=2016-%E5%8C%96%E5%AD%A6-%E5%88%9D%E4%B8%89-%E4%B8%8A%E5%AD%A6%E6%9C%9F-%E5%AD%A6%E6%9C%9F%E6%80%BB%E6%B5%8B-%E6%A8%A1%E6%9D%BF&amp;user_name=学生01&amp;user_id=2079939622&amp;qid=2d27f3e0-28d5-42f1-915c-16f5c2e465d8" class="link">
+                <!-- ngRepeat: question in item.error_questions --><esp-text class="ng-scope">
+                <esp-text class="ng-binding">7</esp-text><esp-text class="ng-binding"></esp-text>
+            </esp-text><!-- end ngRepeat: question in item.error_questions -->
+            </a>
+        </td><!-- end ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length == 0 -->
+            <!--推荐资源-->
+            <!-- ngIf: stateParams.test_type == 'UNITTEST' -->
+            <!--推荐微测-->
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+        </tr><!-- end ngRepeat: item in model.baseData.groupQuotaData --><tr class="hover-none ng-scope" >
+
+
+
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+
+            <!-- ngIf: $index==0 && item.nameA && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA || 0) && item.nameB && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA+item.lengthB || 0) && item.nameC && stateParams.test_type == 'UNITTEST' -->
+            <!--指标-->
+            <td class="ng-binding">利用化学史论证分子的存在</td>
+            <!--得分率-->
+            <td class="ng-binding">100%</td>
+            <!--达标得分率-->
+            <!--<td ng-bind="(item.uts_rate*100 | numberToFixedFilter:0)+'%'"></td>
+            &lt;!&ndash;状态&ndash;&gt;
+            <td ng-bind="(item.rate>=item.uts_rate)?('report.panel.basedata.reach_standard' | translate):('report.panel.basedata.not_reach_standard' | translate)"></td>-->
+            <!--学校平均得分率-->
+            <td class="ng-binding ng-scope">100%</td>
+            <!--区县平均得分率-->
+            <td  class="ng-binding ng-scope">100%</td>
+            <!--错误试题-->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length == 0 --><td  class="ng-scope">无</td><!-- end ngIf: item.error_questions && item.error_questions.length == 0 -->
+            <!--推荐资源-->
+            <!-- ngIf: stateParams.test_type == 'UNITTEST' -->
+            <!--推荐微测-->
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+        </tr><!-- end ngRepeat: item in model.baseData.groupQuotaData --><tr class="hover-none ng-scope" >
+
+
+
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan --><td  rowspan="3" class="ng-binding ng-scope">分子</td><!-- end ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+
+            <!-- ngIf: $index==0 && item.nameA && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA || 0) && item.nameB && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA+item.lengthB || 0) && item.nameC && stateParams.test_type == 'UNITTEST' -->
+            <!--指标-->
+            <td class="ng-binding">认识物质的微粒性</td>
+            <!--得分率-->
+            <td class="ng-binding">100%</td>
+            <!--达标得分率-->
+            <!--<td ng-bind="(item.uts_rate*100 | numberToFixedFilter:0)+'%'"></td>
+            &lt;!&ndash;状态&ndash;&gt;
+            <td ng-bind="(item.rate>=item.uts_rate)?('report.panel.basedata.reach_standard' | translate):('report.panel.basedata.not_reach_standard' | translate)"></td>-->
+            <!--学校平均得分率-->
+            <td class="ng-binding ng-scope">100%</td>
+            <!--区县平均得分率-->
+            <td  class="ng-binding ng-scope">100%</td>
+            <!--错误试题-->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length == 0 --><td  class="ng-scope">无</td><!-- end ngIf: item.error_questions && item.error_questions.length == 0 -->
+            <!--推荐资源-->
+            <!-- ngIf: stateParams.test_type == 'UNITTEST' -->
+            <!--推荐微测-->
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan --><td  rowspan="3" class="ng-scope">
+            <!-- ngIf: item.recommendUnit --><a class="title-link-custom ng-scope" ng-click="recommendUnittest(item)">查看</a><!-- end ngIf: item.recommendUnit -->
+            <!-- ngIf: !item.recommendUnit -->
+        </td><!-- end ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+        </tr><!-- end ngRepeat: item in model.baseData.groupQuotaData --><tr class="hover-none ng-scope" >
+
+
+
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+
+            <!-- ngIf: $index==0 && item.nameA && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA || 0) && item.nameB && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA+item.lengthB || 0) && item.nameC && stateParams.test_type == 'UNITTEST' -->
+            <!--指标-->
+            <td class="ng-binding">知道分子、原子、离子等都是构成物质的微粒</td>
+            <!--得分率-->
+            <td class="ng-binding">0%</td>
+            <!--达标得分率-->
+            <!--<td ng-bind="(item.uts_rate*100 | numberToFixedFilter:0)+'%'"></td>
+            &lt;!&ndash;状态&ndash;&gt;
+            <td ng-bind="(item.rate>=item.uts_rate)?('report.panel.basedata.reach_standard' | translate):('report.panel.basedata.not_reach_standard' | translate)"></td>-->
+            <!--学校平均得分率-->
+            <td class="ng-binding ng-scope">0%</td>
+            <!--区县平均得分率-->
+            <td  class="ng-binding ng-scope">0%</td>
+            <!--错误试题-->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient --><td class="ng-scope">
+            <a esp-common-preview="/html/exam/answer.jsp?is_marked_preview=true&amp;view_type=specificQuestion&amp;exam_id=bd2ad1c9-841f-44b5-b6b7-fb1a5c32002b&amp;session_id=87c14f7b-a062-4bc2-a8f5-eff517f470a3&amp;exam_name=2016-%E5%8C%96%E5%AD%A6-%E5%88%9D%E4%B8%89-%E4%B8%8A%E5%AD%A6%E6%9C%9F-%E5%AD%A6%E6%9C%9F%E6%80%BB%E6%B5%8B-%E6%A8%A1%E6%9D%BF&amp;user_name=学生01&amp;user_id=2079939622&amp;qid=6e00b38c-8f3f-426a-ad33-87a882c917ec" class="link">
+                <!-- ngRepeat: question in item.error_questions --><esp-text class="ng-scope">
+                <esp-text class="ng-binding">2</esp-text><esp-text class="ng-binding"></esp-text>
+            </esp-text><!-- end ngRepeat: question in item.error_questions -->
+            </a>
+        </td><!-- end ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length == 0 -->
+            <!--推荐资源-->
+            <!-- ngIf: stateParams.test_type == 'UNITTEST' -->
+            <!--推荐微测-->
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+        </tr><!-- end ngRepeat: item in model.baseData.groupQuotaData --><tr class="hover-none ng-scope" >
+
+
+
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+
+            <!-- ngIf: $index==0 && item.nameA && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA || 0) && item.nameB && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA+item.lengthB || 0) && item.nameC && stateParams.test_type == 'UNITTEST' -->
+            <!--指标-->
+            <td class="ng-binding">辨识前18号元素的原子结构示意图</td>
+            <!--得分率-->
+            <td class="ng-binding">0%</td>
+            <!--达标得分率-->
+            <!--<td ng-bind="(item.uts_rate*100 | numberToFixedFilter:0)+'%'"></td>
+            &lt;!&ndash;状态&ndash;&gt;
+            <td ng-bind="(item.rate>=item.uts_rate)?('report.panel.basedata.reach_standard' | translate):('report.panel.basedata.not_reach_standard' | translate)"></td>-->
+            <!--学校平均得分率-->
+            <td class="ng-binding ng-scope">0%</td>
+            <!--区县平均得分率-->
+            <td  class="ng-binding ng-scope">0%</td>
+            <!--错误试题-->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient --><td class="ng-scope">
+            <a esp-common-preview="/html/exam/answer.jsp?is_marked_preview=true&amp;view_type=specificQuestion&amp;exam_id=bd2ad1c9-841f-44b5-b6b7-fb1a5c32002b&amp;session_id=87c14f7b-a062-4bc2-a8f5-eff517f470a3&amp;exam_name=2016-%E5%8C%96%E5%AD%A6-%E5%88%9D%E4%B8%89-%E4%B8%8A%E5%AD%A6%E6%9C%9F-%E5%AD%A6%E6%9C%9F%E6%80%BB%E6%B5%8B-%E6%A8%A1%E6%9D%BF&amp;user_name=学生01&amp;user_id=2079939622&amp;qid=3ef9c876-3825-44a9-b2c7-d6321f0778b7" class="link">
+                <!-- ngRepeat: question in item.error_questions --><esp-text class="ng-scope">
+                <esp-text class="ng-binding">4</esp-text><esp-text class="ng-binding"></esp-text>
+            </esp-text><!-- end ngRepeat: question in item.error_questions -->
+            </a>
+        </td><!-- end ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length == 0 -->
+            <!--推荐资源-->
+            <!-- ngIf: stateParams.test_type == 'UNITTEST' -->
+            <!--推荐微测-->
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+        </tr><!-- end ngRepeat: item in model.baseData.groupQuotaData --><tr class="hover-none ng-scope" >
+
+            <td  rowspan="6" class="ng-binding ng-scope">分类与性质</td>
+
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan --><td  rowspan="4" class="ng-binding ng-scope">金属</td><!-- end ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+
+            <!-- ngIf: $index==0 && item.nameA && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA || 0) && item.nameB && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA+item.lengthB || 0) && item.nameC && stateParams.test_type == 'UNITTEST' -->
+            <!--指标-->
+            <td class="ng-binding">利用物理变化和化学变化论证分子是保持物质化学性质的最小微粒</td>
+            <!--得分率-->
+            <td class="ng-binding">0%</td>
+            <!--达标得分率-->
+            <!--<td ng-bind="(item.uts_rate*100 | numberToFixedFilter:0)+'%'"></td>
+            &lt;!&ndash;状态&ndash;&gt;
+            <td ng-bind="(item.rate>=item.uts_rate)?('report.panel.basedata.reach_standard' | translate):('report.panel.basedata.not_reach_standard' | translate)"></td>-->
+            <!--学校平均得分率-->
+            <td class="ng-binding ng-scope">0%</td>
+            <!--区县平均得分率-->
+            <td  class="ng-binding ng-scope">0%</td>
+            <!--错误试题-->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient --><td class="ng-scope">
+            <a esp-common-preview="/html/exam/answer.jsp?is_marked_preview=true&amp;view_type=specificQuestion&amp;exam_id=bd2ad1c9-841f-44b5-b6b7-fb1a5c32002b&amp;session_id=87c14f7b-a062-4bc2-a8f5-eff517f470a3&amp;exam_name=2016-%E5%8C%96%E5%AD%A6-%E5%88%9D%E4%B8%89-%E4%B8%8A%E5%AD%A6%E6%9C%9F-%E5%AD%A6%E6%9C%9F%E6%80%BB%E6%B5%8B-%E6%A8%A1%E6%9D%BF&amp;user_name=学生01&amp;user_id=2079939622&amp;qid=ed4b4bd1-6de8-4f76-bd8d-22070c633dcf" class="link">
+                <!-- ngRepeat: question in item.error_questions --><esp-text class="ng-scope">
+                <esp-text class="ng-binding">9</esp-text><esp-text class="ng-binding"></esp-text>
+            </esp-text><!-- end ngRepeat: question in item.error_questions -->
+            </a>
+        </td><!-- end ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length == 0 -->
+            <!--推荐资源-->
+            <!-- ngIf: stateParams.test_type == 'UNITTEST' -->
+            <!--推荐微测-->
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan --><td  rowspan="4" class="ng-scope">
+            <!-- ngIf: item.recommendUnit --><a class="title-link-custom ng-scope" ng-click="recommendUnittest(item)">查看</a><!-- end ngIf: item.recommendUnit -->
+            <!-- ngIf: !item.recommendUnit -->
+        </td><!-- end ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+        </tr><!-- end ngRepeat: item in model.baseData.groupQuotaData --><tr class="hover-none ng-scope" >
+
+
+
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+
+            <!-- ngIf: $index==0 && item.nameA && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA || 0) && item.nameB && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA+item.lengthB || 0) && item.nameC && stateParams.test_type == 'UNITTEST' -->
+            <!--指标-->
+            <td class="ng-binding">利用物质的微粒性分析解释宏观事实和现象</td>
+            <!--得分率-->
+            <td class="ng-binding">0%</td>
+            <!--达标得分率-->
+            <!--<td ng-bind="(item.uts_rate*100 | numberToFixedFilter:0)+'%'"></td>
+            &lt;!&ndash;状态&ndash;&gt;
+            <td ng-bind="(item.rate>=item.uts_rate)?('report.panel.basedata.reach_standard' | translate):('report.panel.basedata.not_reach_standard' | translate)"></td>-->
+            <!--学校平均得分率-->
+            <td class="ng-binding ng-scope">0%</td>
+            <!--区县平均得分率-->
+            <td  class="ng-binding ng-scope">0%</td>
+            <!--错误试题-->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient --><td class="ng-scope">
+            <a esp-common-preview="/html/exam/answer.jsp?is_marked_preview=true&amp;view_type=specificQuestion&amp;exam_id=bd2ad1c9-841f-44b5-b6b7-fb1a5c32002b&amp;session_id=87c14f7b-a062-4bc2-a8f5-eff517f470a3&amp;exam_name=2016-%E5%8C%96%E5%AD%A6-%E5%88%9D%E4%B8%89-%E4%B8%8A%E5%AD%A6%E6%9C%9F-%E5%AD%A6%E6%9C%9F%E6%80%BB%E6%B5%8B-%E6%A8%A1%E6%9D%BF&amp;user_name=学生01&amp;user_id=2079939622&amp;qid=5dadd69f-d72b-47be-911e-e0599b72abe3" class="link">
+                <!-- ngRepeat: question in item.error_questions --><esp-text class="ng-scope">
+                <esp-text class="ng-binding">11</esp-text><esp-text class="ng-binding"></esp-text>
+            </esp-text><!-- end ngRepeat: question in item.error_questions -->
+            </a>
+        </td><!-- end ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length == 0 -->
+            <!--推荐资源-->
+            <!-- ngIf: stateParams.test_type == 'UNITTEST' -->
+            <!--推荐微测-->
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+        </tr><!-- end ngRepeat: item in model.baseData.groupQuotaData --><tr class="hover-none ng-scope" >
+
+
+
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+
+            <!-- ngIf: $index==0 && item.nameA && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA || 0) && item.nameB && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA+item.lengthB || 0) && item.nameC && stateParams.test_type == 'UNITTEST' -->
+            <!--指标-->
+            <td class="ng-binding">从微观的角度分析物质的构成</td>
+            <!--得分率-->
+            <td class="ng-binding">0%</td>
+            <!--达标得分率-->
+            <!--<td ng-bind="(item.uts_rate*100 | numberToFixedFilter:0)+'%'"></td>
+            &lt;!&ndash;状态&ndash;&gt;
+            <td ng-bind="(item.rate>=item.uts_rate)?('report.panel.basedata.reach_standard' | translate):('report.panel.basedata.not_reach_standard' | translate)"></td>-->
+            <!--学校平均得分率-->
+            <td class="ng-binding ng-scope">0%</td>
+            <!--区县平均得分率-->
+            <td  class="ng-binding ng-scope">0%</td>
+            <!--错误试题-->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient --><td class="ng-scope">
+            <a esp-common-preview="/html/exam/answer.jsp?is_marked_preview=true&amp;view_type=specificQuestion&amp;exam_id=bd2ad1c9-841f-44b5-b6b7-fb1a5c32002b&amp;session_id=87c14f7b-a062-4bc2-a8f5-eff517f470a3&amp;exam_name=2016-%E5%8C%96%E5%AD%A6-%E5%88%9D%E4%B8%89-%E4%B8%8A%E5%AD%A6%E6%9C%9F-%E5%AD%A6%E6%9C%9F%E6%80%BB%E6%B5%8B-%E6%A8%A1%E6%9D%BF&amp;user_name=学生01&amp;user_id=2079939622&amp;qid=5a7a2f5c-fe5a-4170-94ea-786de4d8c577" class="link">
+                <!-- ngRepeat: question in item.error_questions --><esp-text class="ng-scope">
+                <esp-text class="ng-binding">12</esp-text><esp-text class="ng-binding"></esp-text>
+            </esp-text><!-- end ngRepeat: question in item.error_questions -->
+            </a>
+        </td><!-- end ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length == 0 -->
+            <!--推荐资源-->
+            <!-- ngIf: stateParams.test_type == 'UNITTEST' -->
+            <!--推荐微测-->
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+        </tr><!-- end ngRepeat: item in model.baseData.groupQuotaData --><tr class="hover-none ng-scope" >
+
+
+
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+
+            <!-- ngIf: $index==0 && item.nameA && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA || 0) && item.nameB && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA+item.lengthB || 0) && item.nameC && stateParams.test_type == 'UNITTEST' -->
+            <!--指标-->
+            <td class="ng-binding">基于微观的角度分析解释物质性质</td>
+            <!--得分率-->
+            <td class="ng-binding">100%</td>
+            <!--达标得分率-->
+            <!--<td ng-bind="(item.uts_rate*100 | numberToFixedFilter:0)+'%'"></td>
+            &lt;!&ndash;状态&ndash;&gt;
+            <td ng-bind="(item.rate>=item.uts_rate)?('report.panel.basedata.reach_standard' | translate):('report.panel.basedata.not_reach_standard' | translate)"></td>-->
+            <!--学校平均得分率-->
+            <td class="ng-binding ng-scope">100%</td>
+            <!--区县平均得分率-->
+            <td  class="ng-binding ng-scope">100%</td>
+            <!--错误试题-->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length == 0 --><td  class="ng-scope">无</td><!-- end ngIf: item.error_questions && item.error_questions.length == 0 -->
+            <!--推荐资源-->
+            <!-- ngIf: stateParams.test_type == 'UNITTEST' -->
+            <!--推荐微测-->
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+        </tr><!-- end ngRepeat: item in model.baseData.groupQuotaData --><tr class="hover-none ng-scope" >
+
+
+
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan --><td  rowspan="2" class="ng-binding ng-scope">非金属（O2）</td><!-- end ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+
+            <!-- ngIf: $index==0 && item.nameA && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA || 0) && item.nameB && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA+item.lengthB || 0) && item.nameC && stateParams.test_type == 'UNITTEST' -->
+            <!--指标-->
+            <td class="ng-binding">设计实验证温度对分子间距的影响</td>
+            <!--得分率-->
+            <td class="ng-binding">100%</td>
+            <!--达标得分率-->
+            <!--<td ng-bind="(item.uts_rate*100 | numberToFixedFilter:0)+'%'"></td>
+            &lt;!&ndash;状态&ndash;&gt;
+            <td ng-bind="(item.rate>=item.uts_rate)?('report.panel.basedata.reach_standard' | translate):('report.panel.basedata.not_reach_standard' | translate)"></td>-->
+            <!--学校平均得分率-->
+            <td class="ng-binding ng-scope">100%</td>
+            <!--区县平均得分率-->
+            <td  class="ng-binding ng-scope">100%</td>
+            <!--错误试题-->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length == 0 --><td  class="ng-scope">无</td><!-- end ngIf: item.error_questions && item.error_questions.length == 0 -->
+            <!--推荐资源-->
+            <!-- ngIf: stateParams.test_type == 'UNITTEST' -->
+            <!--推荐微测-->
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan --><td  rowspan="2" class="ng-scope">
+            <!-- ngIf: item.recommendUnit --><a class="title-link-custom ng-scope" ng-click="recommendUnittest(item)">查看</a><!-- end ngIf: item.recommendUnit -->
+            <!-- ngIf: !item.recommendUnit -->
+        </td><!-- end ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+        </tr><!-- end ngRepeat: item in model.baseData.groupQuotaData --><tr class="hover-none ng-scope" >
+
+
+
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+
+            <!-- ngIf: $index==0 && item.nameA && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA || 0) && item.nameB && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA+item.lengthB || 0) && item.nameC && stateParams.test_type == 'UNITTEST' -->
+            <!--指标-->
+            <td class="ng-binding">设计实验证温度对分子运动的影响</td>
+            <!--得分率-->
+            <td class="ng-binding">20%</td>
+            <!--达标得分率-->
+            <!--<td ng-bind="(item.uts_rate*100 | numberToFixedFilter:0)+'%'"></td>
+            &lt;!&ndash;状态&ndash;&gt;
+            <td ng-bind="(item.rate>=item.uts_rate)?('report.panel.basedata.reach_standard' | translate):('report.panel.basedata.not_reach_standard' | translate)"></td>-->
+            <!--学校平均得分率-->
+            <td class="ng-binding ng-scope">20%</td>
+            <!--区县平均得分率-->
+            <td  class="ng-binding ng-scope">20%</td>
+            <!--错误试题-->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient --><td class="ng-scope">
+            <a esp-common-preview="/html/exam/answer.jsp?is_marked_preview=true&amp;view_type=specificQuestion&amp;exam_id=bd2ad1c9-841f-44b5-b6b7-fb1a5c32002b&amp;session_id=87c14f7b-a062-4bc2-a8f5-eff517f470a3&amp;exam_name=2016-%E5%8C%96%E5%AD%A6-%E5%88%9D%E4%B8%89-%E4%B8%8A%E5%AD%A6%E6%9C%9F-%E5%AD%A6%E6%9C%9F%E6%80%BB%E6%B5%8B-%E6%A8%A1%E6%9D%BF&amp;user_name=学生01&amp;user_id=2079939622&amp;qid=491ab975-3cb3-49fe-981d-38d66550e205" class="link">
+                <!-- ngRepeat: question in item.error_questions --><esp-text class="ng-scope">
+                <esp-text class="ng-binding">16</esp-text><esp-text class="ng-binding"></esp-text>
+            </esp-text><!-- end ngRepeat: question in item.error_questions -->
+            </a>
+        </td><!-- end ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length == 0 -->
+            <!--推荐资源-->
+            <!-- ngIf: stateParams.test_type == 'UNITTEST' -->
+            <!--推荐微测-->
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+        </tr><!-- end ngRepeat: item in model.baseData.groupQuotaData --><tr class="hover-none ng-scope" >
+
+            <td  rowspan="2" class="ng-binding ng-scope">变化与反应</td>
+
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan --><td  rowspan="2" class="ng-binding ng-scope">反应规律</td><!-- end ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+
+            <!-- ngIf: $index==0 && item.nameA && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA || 0) && item.nameB && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA+item.lengthB || 0) && item.nameC && stateParams.test_type == 'UNITTEST' -->
+            <!--指标-->
+            <td class="ng-binding">利用原子结构化学史论证原子结构</td>
+            <!--得分率-->
+            <td class="ng-binding">100%</td>
+            <!--达标得分率-->
+            <!--<td ng-bind="(item.uts_rate*100 | numberToFixedFilter:0)+'%'"></td>
+            &lt;!&ndash;状态&ndash;&gt;
+            <td ng-bind="(item.rate>=item.uts_rate)?('report.panel.basedata.reach_standard' | translate):('report.panel.basedata.not_reach_standard' | translate)"></td>-->
+            <!--学校平均得分率-->
+            <td class="ng-binding ng-scope">100%</td>
+            <!--区县平均得分率-->
+            <td  class="ng-binding ng-scope">100%</td>
+            <!--错误试题-->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length == 0 --><td  class="ng-scope">无</td><!-- end ngIf: item.error_questions && item.error_questions.length == 0 -->
+            <!--推荐资源-->
+            <!-- ngIf: stateParams.test_type == 'UNITTEST' -->
+            <!--推荐微测-->
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan --><td  rowspan="2" class="ng-scope">
+            <!-- ngIf: item.recommendUnit -->
+            <!-- ngIf: !item.recommendUnit --><esp-text  class="ng-scope">查看</esp-text><!-- end ngIf: !item.recommendUnit -->
+        </td><!-- end ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+        </tr><!-- end ngRepeat: item in model.baseData.groupQuotaData --><tr class="hover-none ng-scope" >
+
+
+
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+
+            <!-- ngIf: $index==0 && item.nameA && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA || 0) && item.nameB && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA+item.lengthB || 0) && item.nameC && stateParams.test_type == 'UNITTEST' -->
+            <!--指标-->
+            <td class="ng-binding">利用实验或经验事实说明物质的微粒性</td>
+            <!--得分率-->
+            <td class="ng-binding">100%</td>
+            <!--达标得分率-->
+            <!--<td ng-bind="(item.uts_rate*100 | numberToFixedFilter:0)+'%'"></td>
+            &lt;!&ndash;状态&ndash;&gt;
+            <td ng-bind="(item.rate>=item.uts_rate)?('report.panel.basedata.reach_standard' | translate):('report.panel.basedata.not_reach_standard' | translate)"></td>-->
+            <!--学校平均得分率-->
+            <td class="ng-binding ng-scope">100%</td>
+            <!--区县平均得分率-->
+            <td  class="ng-binding ng-scope">100%</td>
+            <!--错误试题-->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length == 0 --><td  class="ng-scope">无</td><!-- end ngIf: item.error_questions && item.error_questions.length == 0 -->
+            <!--推荐资源-->
+            <!-- ngIf: stateParams.test_type == 'UNITTEST' -->
+            <!--推荐微测-->
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+        </tr><!-- end ngRepeat: item in model.baseData.groupQuotaData --><tr class="hover-none ng-scope" >
+
+            <td  rowspan="4" class="ng-binding ng-scope">实验与探究</td>
+
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan --><td  rowspan="3" class="ng-binding ng-scope">规律探究</td><!-- end ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+
+            <!-- ngIf: $index==0 && item.nameA && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA || 0) && item.nameB && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA+item.lengthB || 0) && item.nameC && stateParams.test_type == 'UNITTEST' -->
+            <!--指标-->
+            <td class="ng-binding">根据化学变化中某些物质的构成推其他物质</td>
+            <!--得分率-->
+            <td class="ng-binding">0%</td>
+            <!--达标得分率-->
+            <!--<td ng-bind="(item.uts_rate*100 | numberToFixedFilter:0)+'%'"></td>
+            &lt;!&ndash;状态&ndash;&gt;
+            <td ng-bind="(item.rate>=item.uts_rate)?('report.panel.basedata.reach_standard' | translate):('report.panel.basedata.not_reach_standard' | translate)"></td>-->
+            <!--学校平均得分率-->
+            <td class="ng-binding ng-scope">0%</td>
+            <!--区县平均得分率-->
+            <td  class="ng-binding ng-scope">0%</td>
+            <!--错误试题-->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient --><td class="ng-scope">
+            <a esp-common-preview="/html/exam/answer.jsp?is_marked_preview=true&amp;view_type=specificQuestion&amp;exam_id=bd2ad1c9-841f-44b5-b6b7-fb1a5c32002b&amp;session_id=87c14f7b-a062-4bc2-a8f5-eff517f470a3&amp;exam_name=2016-%E5%8C%96%E5%AD%A6-%E5%88%9D%E4%B8%89-%E4%B8%8A%E5%AD%A6%E6%9C%9F-%E5%AD%A6%E6%9C%9F%E6%80%BB%E6%B5%8B-%E6%A8%A1%E6%9D%BF&amp;user_name=学生01&amp;user_id=2079939622&amp;qid=9733d31f-07b9-4534-9255-f396a8ce020d" class="link">
+                <!-- ngRepeat: question in item.error_questions --><esp-text class="ng-scope">
+                <esp-text class="ng-binding">14</esp-text><esp-text class="ng-binding"></esp-text>
+            </esp-text><!-- end ngRepeat: question in item.error_questions -->
+            </a>
+        </td><!-- end ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length == 0 -->
+            <!--推荐资源-->
+            <!-- ngIf: stateParams.test_type == 'UNITTEST' -->
+            <!--推荐微测-->
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan --><td  rowspan="3" class="ng-scope">
+            <!-- ngIf: item.recommendUnit --><a class="title-link-custom ng-scope" ng-click="recommendUnittest(item)">查看</a><!-- end ngIf: item.recommendUnit -->
+            <!-- ngIf: !item.recommendUnit -->
+        </td><!-- end ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+        </tr><!-- end ngRepeat: item in model.baseData.groupQuotaData --><tr class="hover-none ng-scope" >
+
+
+
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+
+            <!-- ngIf: $index==0 && item.nameA && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA || 0) && item.nameB && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA+item.lengthB || 0) && item.nameC && stateParams.test_type == 'UNITTEST' -->
+            <!--指标-->
+            <td class="ng-binding">根据分子和原子知识推出陌生物质的化学式的含义</td>
+            <!--得分率-->
+            <td class="ng-binding">100%</td>
+            <!--达标得分率-->
+            <!--<td ng-bind="(item.uts_rate*100 | numberToFixedFilter:0)+'%'"></td>
+            &lt;!&ndash;状态&ndash;&gt;
+            <td ng-bind="(item.rate>=item.uts_rate)?('report.panel.basedata.reach_standard' | translate):('report.panel.basedata.not_reach_standard' | translate)"></td>-->
+            <!--学校平均得分率-->
+            <td class="ng-binding ng-scope">100%</td>
+            <!--区县平均得分率-->
+            <td  class="ng-binding ng-scope">100%</td>
+            <!--错误试题-->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length == 0 --><td  class="ng-scope">无</td><!-- end ngIf: item.error_questions && item.error_questions.length == 0 -->
+            <!--推荐资源-->
+            <!-- ngIf: stateParams.test_type == 'UNITTEST' -->
+            <!--推荐微测-->
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+        </tr><!-- end ngRepeat: item in model.baseData.groupQuotaData --><tr class="hover-none ng-scope" >
+
+
+
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+
+            <!-- ngIf: $index==0 && item.nameA && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA || 0) && item.nameB && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA+item.lengthB || 0) && item.nameC && stateParams.test_type == 'UNITTEST' -->
+            <!--指标-->
+            <td class="ng-binding">基于微观的角度认识物质变化</td>
+            <!--得分率-->
+            <td class="ng-binding">100%</td>
+            <!--达标得分率-->
+            <!--<td ng-bind="(item.uts_rate*100 | numberToFixedFilter:0)+'%'"></td>
+            &lt;!&ndash;状态&ndash;&gt;
+            <td ng-bind="(item.rate>=item.uts_rate)?('report.panel.basedata.reach_standard' | translate):('report.panel.basedata.not_reach_standard' | translate)"></td>-->
+            <!--学校平均得分率-->
+            <td class="ng-binding ng-scope">100%</td>
+            <!--区县平均得分率-->
+            <td  class="ng-binding ng-scope">100%</td>
+            <!--错误试题-->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length == 0 --><td  class="ng-scope">无</td><!-- end ngIf: item.error_questions && item.error_questions.length == 0 -->
+            <!--推荐资源-->
+            <!-- ngIf: stateParams.test_type == 'UNITTEST' -->
+            <!--推荐微测-->
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+        </tr><!-- end ngRepeat: item in model.baseData.groupQuotaData --><tr class="hover-none ng-scope" >
+
+
+
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan --><td  rowspan="1" class="ng-binding ng-scope">物质制备</td><!-- end ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan -->
+
+            <!-- ngIf: $index==0 && item.nameA && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA || 0) && item.nameB && stateParams.test_type == 'UNITTEST' -->
+            <!-- ngIf: $index==(item.lengthA+item.lengthB || 0) && item.nameC && stateParams.test_type == 'UNITTEST' -->
+            <!--指标-->
+            <td class="ng-binding">根据分子和原子知识推出化学变化中质量守恒</td>
+            <!--得分率-->
+            <td class="ng-binding">40%</td>
+            <!--达标得分率-->
+            <!--<td ng-bind="(item.uts_rate*100 | numberToFixedFilter:0)+'%'"></td>
+            &lt;!&ndash;状态&ndash;&gt;
+            <td ng-bind="(item.rate>=item.uts_rate)?('report.panel.basedata.reach_standard' | translate):('report.panel.basedata.not_reach_standard' | translate)"></td>-->
+            <!--学校平均得分率-->
+            <td class="ng-binding ng-scope">40%</td>
+            <!--区县平均得分率-->
+            <td class="ng-binding ng-scope">40%</td>
+            <!--错误试题-->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient --><td class="ng-scope">
+            <a esp-common-preview="/html/exam/answer.jsp?is_marked_preview=true&amp;view_type=specificQuestion&amp;exam_id=bd2ad1c9-841f-44b5-b6b7-fb1a5c32002b&amp;session_id=87c14f7b-a062-4bc2-a8f5-eff517f470a3&amp;exam_name=2016-%E5%8C%96%E5%AD%A6-%E5%88%9D%E4%B8%89-%E4%B8%8A%E5%AD%A6%E6%9C%9F-%E5%AD%A6%E6%9C%9F%E6%80%BB%E6%B5%8B-%E6%A8%A1%E6%9D%BF&amp;user_name=学生01&amp;user_id=2079939622&amp;qid=dbfd3300-f3f1-45f0-8a7c-2705276dc117" class="link">
+                <!-- ngRepeat: question in item.error_questions --><esp-text class="ng-scope">
+                <esp-text class="ng-binding">15</esp-text><esp-text  class="ng-binding"></esp-text>
+            </esp-text><!-- end ngRepeat: question in item.error_questions -->
+            </a>
+        </td><!-- end ngIf: item.error_questions && item.error_questions.length > 0 && !needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length > 0 && needCallNativeClient -->
+            <!-- ngIf: item.error_questions && item.error_questions.length == 0 -->
+            <!--推荐资源-->
+            <!-- ngIf: stateParams.test_type == 'UNITTEST' -->
+            <!--推荐微测-->
+            <!-- ngIf: stateParams.test_type == 'TERMTEST' && item.knowledgeRowspan --><td  rowspan="1" class="ng-scope">
+            <!-- ngIf: item.recommendUnit --><a class="title-link-custom ng-scope" ng-click="recommendUnittest(item)">查看</a><!-- end ngIf: item.recommendUnit -->
+
+        </td>
+        </tr>
+        </tbody>
+    </table>
+
+
+    <!--<svg width="200" height="250">-->
+    <!--<rect x="10" y="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>-->
+    <!--<rect x="60" y="10" rx="10" ry="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>-->
+    <!--<circle cx="25" cy="75" r="20" stroke="red" fill="transparent" stroke-width="5"/>-->
+    <!--<ellipse cx="75" cy="75" rx="20" ry="5" stroke="red" fill="transparent" stroke-width="5"/>-->
+    <!--<line x1="10" x2="50" y1="110" y2="150" stroke="orange" fill="transparent" stroke-width="5"/>-->
+    <!--<polyline points="60 110 65 120 70 115 75 130 80 125 85 140 90 135 95 150 100 145"-->
+    <!--stroke="orange" fill="transparent" stroke-width="5"/>-->
+    <!--<polygon points="50 160 55 180 70 180 60 190 65 205 50 195 35 205 40 190 30 180 45 180"-->
+    <!--stroke="green" fill="transparent" stroke-width="5"/>-->
+    <!--<path d="M20,230 Q40,205 50,230 T90,230" fill="none" stroke="blue" stroke-width="5"/>-->
+    <!--</svg>-->
+</div>
+<div>
+    <!--<img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABOwAAAExCAYAAADP3T3TAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAMyVSURBVHhe7N0HeBRVFwbgb3t6p/fee++gUkVRwIYiiAgiFsSKv4qCoiCiCAhiQUWpUgQV6b1X6SWEQKghvW//59ydCUtIID2bzXl5luzcma3Z7M58e+69KrsEjDHGGGMs36gk8lnYbLaK0mKEvMgYY4wxxvLIbrdHqNXqyvKiW1LLPxljjDHGGGOMMcYYYy6AAzvGGGOMMcYYY4wxxlwIB3aMMcYYY4wxxhhjjLkQDuwYY4wxxhhjjDHGGHMhHNgxxhhjjDHGGGOMMeZCOLBjjDHGGGOMMcYYY8yFcGDHGGOMMcYYY4wxxpgL4cCOMcYYY4wxxhhjjDEXwoEdY4wxxhhjjDHGGGMuhAM7xhhjjDHGGGOMMcZcCAd2jDHGGGOMsQIVGxuLoUOHokePHggLC5NbM5eQkIC33noL999/P/bu3Su3MsYYYyULB3aMsRKtb9++aNmypbzEGGOMub7U1FT8+OOP4vOrW7duWL16tbzmdkpI1qZNG/GTOURGRornjgPBO0VFRaF3797i+bnXiZ8/xhgrWBzYMcbuadu2bWLH7IUXXpBbCkZh3Y6zv/76CwcOHJCXGGOMseIlLS0N27dvl5dusVgsOHPmDI4fPy63FLykpCRMnjwZnTt3xs8//yy3uhYKO5WA02g0in0PdktISAjWrFkj9o3otHPnTnz44Yfw8PDAE088kd5Op40bN4owmN0K0Tt27IgvvvhCbmWMsbzhwI4xxhhjjLFiymw248iRI3d0M6X2EydOyEtMQQEnhVClSpUS5zdv3iyvYYwxxlyLyi6RzzPG2B2WLFmCKVOmyEu3LFiwALVr15aXICrjFGXLlhWVaxl98MEH4ltbhfN22b2dezl79iwGDRqEZs2a4fvvvxddXq9fvy7WKW3OlPX0TbEz5XoUmV2WMeb66O/7hx9+QEREhNySM5UqVcLw4cPF+1VOqCTyWdhstorSYu7uAGOZoGoe+nycO3cugoKCkJycjGHDht3W7ZW6w44bNw6+vr6iiqxevXq3Vb1RBR599r388styC+Dv749JkybdVjVF1/P666/j6tWr+Oqrr7Bnzx7Mnj1brCtdujT++ecfcZ7GnZs4ceJtAZhGo0m/3exeD1Gu69ChQ+L+1KhRA4MHD4bVasWcOXNQvXp1ectb2/733393rMtIecxvv/02BgwYgMuXL4vlsWPH4qGHHhLbKM/tL7/8csdz6nx5ZV3G51Gn06FTp0637dNQ5eGsWbPw77//YtSoUUhMTBS/O+W5ye7vglCXVXoubt68KW6rdevWomsq3V6/fv3E2H8K5XaXLl0qlum14PxYs4OqENeuXZvp9TtTnjfld+rl5XXH86fcd3p7pP0+5b45v06cX0cZn0vleaLXEbXT78H5ucj4vBPl/k+YMEEsU6Vgxsfh/Nqky//+++/YvXt3+nYZHxtxfs1mfJ4VyjbO1+/8GlWeD+fX9b1eKyTj31pWrxXGCgu9hsPDw/Hbb7+J13lO0XtArVq18Mwzz4gvU7LLbrdHqNXqyvKiW+IKO8bYXT3++OOYNm2aOE+hFe0o0UkJ0SjYorCOdsiUdXSATEGYs5kzZ4qwjnZ4lO2cQ7173U5u0H2g66TroZ+HDx/OVndbOrChsI52BOmydJ+ze1nGmGs5evRorsM6Qpel62DMFRkMBnTt2lWEElu2bJFbb3WHpVPdunXl1lsogKBA6s0330zv5kiXpwkhKKBwDvYUKSkpWLRoEWJiYkTYRp/rFETQZyXx8/PD+PHj8dhjj4mwhsInGt8s43Xd63oyQyELPU6qiMvYhZXaKFzp3r37XcM6Qre9bNkycX30WCngydil2NPTUwQ1gYGBOHnypNzqQNtu3boVPj4+Yr+HnncKZCgYpcdOj4fCSLq+zB4PXX7Tpk3isSvPDf2uKJikwEbZ96GwRq/X4+OPP5Yv6eAceCm/MwrrlDDKGYU6dHm6v8q2vXr1E'>-->
+</div>
+
+
+<div>
+    <a class='add' id="button">生成2</a>
+</div>
+<div id="testc"></div>
+<div>
+    <canvas></canvas>
+</div>
+<script type="text/javascript">
+    var page_params = {
+        count: 0,//记数
+        current_id: ''//当前选择的li的ID
+    };
+
+    $(function () {
+        $("#add").click(function () {
+            var id = page_params.count + 1;
+            page_params.count = id;
+            var html = "<li id='tb_" + id + "' onclick='select(\"tb_" + id + "\")'></li>";
+            $('ol').append(html);
+            select("tb_" + id);
+
+        });
+    });
+
+    var select = function (current_id) {
+        page_params.current_id = current_id;
+        $('li').removeClass("selected");
+        $('#' + current_id).addClass("selected");
+    }
+
+    //    var canvas = document.querySelector("canvas");
+    document.querySelector("#button").addEventListener("click", function () {
+
+        html2canvas(document.querySelector("#editor"), {
+//            canvas: canvas,
+            allowTaint: true,
+            aintTest: false,
+            onrendered: function (canvas) {
+
+//                var canvastemp = document.querySelector("canvas");
+//				 alert(canvas.toDataURL());
+                $('body').append(canvas);
+                var img = canvas.toDataURL('image/png');
+                var newImg = document.createElement("img");
+                newImg.src = img;
+                newImg.height = 1338;
+                newImg.width = 500;
+//		        document.getElementById(page_params.current_id).appendChild(newImg);
+                document.getElementById('testc').appendChild(newImg);
+            }
+        });
+        /*html2canvas(document.querySelector("#editor"), {canvas: canvas}).then(function(canvas) {
+         console.log('Drew on the existing canvas');
+         });*/
+    }, false);
+</script>
+</body>
+
+</html> 
