@@ -101,16 +101,22 @@ function main2(){
     var nodes = galaxy.nodes(root);
     var links = galaxy.links(nodes);
 
-    var link = svg.selectAll(".link")
+    // var link = svg.selectAll(".link")
+    //     .data(links)
+    //     .enter().append("line")
+    //     .attr("class", "link")
+    //     .style("stroke-width", function (d) {
+    //         return Math.sqrt(d.value);
+    //     })
+    //     .call(truncated_line)
+    //     ;
+
+    var link = svg.append("g")
+        .attr("class", "links")
+        .selectAll("line")
         .data(links)
         .enter().append("line")
-        .attr("class", "link")
-        .style("stroke-width", function (d) {
-            return Math.sqrt(d.value);
-        })
-        .call(truncated_line)
-        ;
-
+        .attr("stroke-width", function(d) { return 1 });
     function truncated_line(l) {
         function len(d) {
             return Math.sqrt(Math.pow((d.target.y - d.source.y), 2) +
