@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>timer</title>
+
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="amOnDutyTime"/>
+        <input type="text" v-model="pmOnDutyTime"/>
+        <button v-on:click="calculation">do it</button>
+        {{ pmOffDutyTime }}
+    </div>
+
+</body>
+<script src="vue.min.js"></script>
+<script>
+    Date.prototype.format = function(fmt) {
+        var o = {
+            "M+" : this.getMonth()+1,                 //月份
+            "d+" : this.getDate(),                    //日
+            "h+" : this.getHours(),                   //小时
+            "m+" : this.getMinutes(),                 //分
+            "s+" : this.getSeconds(),                 //秒
+            "q+" : Math.floor((this.getMonth()+3)/3), //季度
+            "S"  : this.getMilliseconds()             //毫秒
+        };
+        if(/(y+)/.test(fmt)) {
+            fmt=fmt.replace(RegExp.$1, (this.getFullYear()+"").substr(4 - RegExp.$1.length));
+        }
+        for(var k in o) {
+            if(new RegExp("("+ k +")").test(fmt)){
+                fmt = fmt.replace(RegExp.$1, (RegExp.$1.length==1) ? (o[k]) : (("00"+ o[k]).substr((""+ o[k]).length)));
+            }
+        }
+        return fmt;
+    }
+
+    var timeCalculation = function(amOnDutyTime,pmOnDutyTime){
+        var amOffDutyTime = '12:00',
+            pmOffDutyTime = '',
+            currentDate = (new Date()).format('yyyy-MM-dd'),
+            totalMs = 8*60*60*1000;
+        pmOffDutyTime = totalMs - (Date.parse(currentDate + ' ' +amOffDutyTime) - Date.parse(currentDate + ' ' +amOnDutyTime)) + Date.parse(currentDate + ' ' +pmOnDutyTime);
+        return (new Date(pmOffDutyTime)).format('hh:mm');
+    }
+
+    // 这是我们的Model
+    var exampleData = {
+        amOnDutyTime: '09:51',
+        pmOnDutyTime: '13:42',
+        pmOffDutyTime: '',
+    };
+
+    // 创建一个 Vue 实例或 "ViewModel"
+    // 它连接 View 与 Model
+    new Vue({
+        el: '#app',
+        data: exampleData,
+        methods: {
+            calculation: function() {
+                this.pmOffDutyTime = timeCalculation(this.amOnDutyTime,this.pmOnDutyTime);
+            }
+        }
+    })
+</script>
+</html>
